@@ -10,7 +10,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# `HyperDesign`: Identification and Estimation using Group Testing
+# `HyperDesign`: HyperDesign
 
 ```{r,echo = FALSE, message = FALSE}
 devtools::load_all(".")

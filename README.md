@@ -1,5 +1,5 @@
 
-# `HyperDesign`: Identification and Estimation using Group Testing
+# `HyperDesign`: HyperDesign
 
 ###### Version : [0.1.0](https://myaseen208.com/HyperDesign/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
