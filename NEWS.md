@@ -1,5 +1,4 @@
-# HyperDesign 0.1.0
+# Changes in StabilityApp Version 0.1.0
+## New Features 
 
-## Major changes
-
-* New package
+* First version of StabilityApp

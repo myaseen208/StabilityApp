@@ -1,17 +1,29 @@
-Package: HyperDesign
+Package: StabilityApp
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Stability Analysis App for Genotype by Environment Interaction (GEI) in Multi-Environment Trials
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: Description of your package.
-License: MIT
+Authors@R: c(
+              person(c("Muhammad"), "Yaseen", email = "myaseen208@gmail.com",        role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-5923-1714"))
+            , person(c("Kent",  "M."), "Eskridge",  email = "keskridge1@unl.edu ",   role = c("aut", "ctb"))
+            )
+Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
+Description: Provides tools for Genotype by Environment Interaction (GEI) analysis, using statistical models and visualizations to assess genotype performance across environments. It helps researchers explore interaction effects, stability, and adaptability in multi-environment trials, identifying the best-performing genotypes in different conditions. Which Win Where!
+Depends: R (>= 4.1)
 Imports: 
-    furrr,
-    fastverse,
-    Matrix,
-    primes,
-    R6
+  dplyr,
+  DT,
+  gridExtra,
+  patchwork,
+  stability,
+  shiny,
+  shinyBS,
+  shinydashboardPlus
+Suggests: 
+    shinytest2,
+    testthat (>= 3.0.0)
+License: GPL-3
+LazyData: TRUE
 RoxygenNote: 7.3.2
 Encoding: UTF-8
-LazyData: true
+Note: School of Mathematical & Statistical Sciences, Clemson University, Clemson, South Carolina, USA
+Config/testthat/edition: 3

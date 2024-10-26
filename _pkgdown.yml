@@ -1,50 +1,35 @@
-url: https://myaseen208.github.io/HyperDesign/
+url: https://myaseen208.com/StabilityApp/
 
 home:
-  title: HyperDesign
-  description: HyperDesign
+  title: StabilityApp
+  description: Stability Analysis App for Genotype by Environment Interaction (GEI) in Multi-Environment Trials
+
 
 template:
+  bootstrap: 5
   params:
     bootswatch: united
     ganalytics: UA-116716530-2
     docsearch:
       api_key: bdafb7ea4490644e670f470ee3ef537f
-      index_name: HyperDesign
+      index_name: StabilityApp
+
 
 toc:
   depth: 3
 
 authors:
-  Brianna Hitt:
-    href: https://statistics.unl.edu/
-  Christopher Bilder:
-    href: https://www.chrisbilder.com/
-  Frank Schaarschmidt:
-    href: https://www.cell.uni-hannover.de/de/frank-schaarschmidt
-  Brad Biggerstaff:
-    href: https://vetmedbiosci.colostate.edu/cvid/
-  Christopher McMahan:
-    href: https://www.clemson.edu/science/academics/departments/mathstat/about/profiles/mcmaha2
-  Joshua Tebbs:
-    href: https://people.stat.sc.edu/tebbs/
-  Boan Zhang:
-    href: https://statistics.unl.edu/
-  Michael Black:
-    href: https://statistics.unl.edu/
-  Peijie Hou:
-    href: https://sc.edu/study/colleges_schools/artsandsciences/statistics/index.php
-  Peng Chen:
-    href: https://sc.edu/study/colleges_schools/artsandsciences/statistics/index.php
-  Minh Nguyen:
-    href: https://statistics.unl.edu/
+  Muhammmad Yaseen:
+    href: https://www.researchgate.net/profile/Muhammad_Yaseen10
+  Kent M. Eskridge:
+    href: https://www.researchgate.net/profile/Kent_Eskridge
 
 development:
   mode: unreleased
 
 
 navbar:
-  title: HyperDesign
+  title: StabilityApp
   type: default
   left:
     - icon: fa-home fa-lg
@@ -57,9 +42,17 @@ navbar:
       text: News
       href: news/index.html
   right:
-    - icon: "fa-github"
-      href: https://github.com/myaseen208/HyperDesign
-    - text: "RG"
-      href: https://www.chrisbilder.com/
+    - text: "GitHub"
+      href: https://github.com/myaseen208/StabilityApp
+      icon: fa-github
+      aria-label: "GitHub repository"
+    - text: "ResearchGate"
+      href: https://www.researchgate.net/profile/Muhammad_Yaseen10
+      icon: fa-github
+      aria-label: "ResearchGate"
+    - text: "Twitter"
+      href: https://twitter.com/myaseen208
+      icon: "fab fa-twitter"
+      aria-label: "Twitter"
 
 reference:
