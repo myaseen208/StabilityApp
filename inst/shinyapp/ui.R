@@ -114,7 +114,7 @@ ui <- dashboardPage(
     , br()
     , h4(
           tags$strong("Author/Maintainer:"),
-          tags$a(href = "https://myaseen208.com/", "M. Yaseen", target = "_blank"),
+          tags$a(href = "https://myaseen208.com/", "Muhammad Yaseen", target = "_blank"),
           align = "center"
         )
      , h4(
@@ -1014,4 +1014,3 @@ ui <- dashboardPage(
         )
       )
     )
-

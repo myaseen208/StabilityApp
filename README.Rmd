@@ -10,13 +10,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-## `StabilityApp`: Stability Analysis App for Genotype by Environment Interaction (GEI) in Multi-Environment Trials
+## `StabilityApp`: Stability Analysis App for GEI in Multi-Environment Trials
 
 
 ###### Version : [`r getNamespaceVersion("StabilityApp")`](https://myaseen208.com/StabilityApp/); Copyright (C) 2024: License: [GPL-2|GPL-3](https://www.r-project.org/Licenses/)
 
 
-##### *Muhammad Yaseen^1,2^, and Kent M. Eskridge^2^*
+##### *Muhammad Yaseen^1,2^, and Kent M. Eskridge^3^*
 
 1. [School of Mathematical & Statistical Sciences, Clemson University, Clemson, South Carolina, USA](https://www.clemson.edu/science/academics/departments/mathstat/about/profiles/myaseen)
 2. Department of Mathematics and Statistics, University of Agriculture Faisalabad, Pakistan

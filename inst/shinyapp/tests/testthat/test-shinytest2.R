@@ -1,8 +1,10 @@
 library(shinytest2)
 
 test_that("{shinytest2} recording: shinyapp", {
-  app <- AppDriver$new(variant = platform_variant(), name = "shinyapp", seed = 12345, 
-      height = 620, width = 1003)
+  app <- AppDriver$new(variant = platform_variant(), name = "shinyapp", height = 688, 
+      width = 1147)
+  app$expect_values()
+  app$expect_screenshot()
   app$set_inputs(data_head_rows_current = c(1, 2, 3, 4, 5), allow_no_input_binding_ = TRUE)
   app$set_inputs(data_head_rows_all = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
       14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 
@@ -95,7 +97,7 @@ test_that("{shinytest2} recording: shinyapp", {
       1292, 1293, 1294, 1295, 1296, 1297, 1298, 1299, 1300, 1301, 1302, 1303, 1304, 
       1305, 1306, 1307, 1308, 1309, 1310, 1311, 1312, 1313, 1314, 1315, 1316, 1317, 
       1318, 1319, 1320), allow_no_input_binding_ = TRUE)
-  app$set_inputs(data_head_state = c(1729956107010, 0, 5, "", TRUE, FALSE, TRUE, 
+  app$set_inputs(data_head_state = c(1730199471759, 0, 5, "", TRUE, FALSE, TRUE, 
       c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", 
           TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
           TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE)), 
@@ -115,7 +117,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_reg2_result_state = c(1729956161290, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_reg2_result_state = c(1730199508468, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -128,19 +130,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_asv_result_state = c(1729956166219, 0, 25, "", TRUE, FALSE, 
-      TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
-          "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
-          FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
-          TRUE)), allow_no_input_binding_ = TRUE)
-  app$click("run_stab_asv")
-  app$set_inputs(stab_asv_result_rows_current = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
-      11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_asv_result_rows_all = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
-      12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
-      31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
-      50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_asv_result_state = c(1729956184358, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_asv_result_state = c(1730199512759, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -152,7 +142,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_dist_result_state = c(1729956188485, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_dist_result_state = c(1730199517996, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -164,7 +154,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_fox_result_state = c(1729956192889, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_fox_result_state = c(1730199521784, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE)), allow_no_input_binding_ = TRUE)
   app$click("run_stab_kang")
@@ -174,7 +164,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_kang_result_state = c(1729956197464, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_kang_result_state = c(1730199525939, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -186,7 +176,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_masv_result_state = c(1729956201511, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_masv_result_state = c(1730199530303, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -198,7 +188,7 @@ test_that("{shinytest2} recording: shinyapp", {
       11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
       30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 
       49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_measures_result_state = c(1729956205779, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_measures_result_state = c(1730199535545, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -210,7 +200,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_par_result3_state = c(1729956210709, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_par_result3_state = c(1730199540656, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -222,7 +212,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_par_result2_state = c(1729956210757, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_par_result2_state = c(1730199540715, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -236,7 +226,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(stab_reg_result_state = c(1729956216943, 0, 25, "", TRUE, FALSE, 
+  app$set_inputs(stab_reg_result_state = c(1730199546081, 0, 25, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -247,7 +237,7 @@ test_that("{shinytest2} recording: shinyapp", {
       allow_no_input_binding_ = TRUE)
   app$set_inputs(ge_means_result5_rows_all = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), 
       allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_means_result5_state = c(1729956225704, 0, 10, "", TRUE, FALSE, 
+  app$set_inputs(ge_means_result5_state = c(1730199550958, 0, 10, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -278,7 +268,7 @@ test_that("{shinytest2} recording: shinyapp", {
   app$set_inputs(ge_means_result4_rows_current = c(1, 2, 3, 4, 5), allow_no_input_binding_ = TRUE)
   app$set_inputs(ge_means_result4_rows_all = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), 
       allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_means_result4_state = c(1729956225748, 0, 5, "", TRUE, FALSE, 
+  app$set_inputs(ge_means_result4_state = c(1730199551025, 0, 5, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE)), allow_no_input_binding_ = TRUE)
   app$set_inputs(ge_means_result3_rows_current = c(1, 2, 3, 4, 5), allow_no_input_binding_ = TRUE)
@@ -286,7 +276,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_means_result3_state = c(1729956225761, 0, 5, "", TRUE, FALSE, 
+  app$set_inputs(ge_means_result3_state = c(1730199551037, 0, 5, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE)), allow_no_input_binding_ = TRUE)
   app$set_inputs(ge_means_result1_rows_current = c(1, 2, 3, 4, 5), allow_no_input_binding_ = TRUE)
@@ -294,7 +284,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_means_result1_state = c(1729956225769, 0, 5, "", TRUE, FALSE, 
+  app$set_inputs(ge_means_result1_state = c(1730199551136, 0, 5, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -308,7 +298,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_effects_result3_state = c(1729956232554, 0, 10, "", TRUE, FALSE, 
+  app$set_inputs(ge_effects_result3_state = c(1730199556766, 0, 10, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -321,7 +311,7 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_effects_result2_state = c(1729956232578, 0, 10, "", TRUE, FALSE, 
+  app$set_inputs(ge_effects_result2_state = c(1730199556786, 0, 10, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
@@ -334,13 +324,11 @@ test_that("{shinytest2} recording: shinyapp", {
       12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
       31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 
       50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60), allow_no_input_binding_ = TRUE)
-  app$set_inputs(ge_effects_result1_state = c(1729956232588, 0, 10, "", TRUE, FALSE, 
+  app$set_inputs(ge_effects_result1_state = c(1730199556794, 0, 10, "", TRUE, FALSE, 
       TRUE, c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, 
           "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, 
           FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, 
           TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), 
       c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE), c(TRUE, "", 
           TRUE, FALSE, TRUE), c(TRUE, "", TRUE, FALSE, TRUE)), allow_no_input_binding_ = TRUE)
-  app$expect_values()
-  app$expect_screenshot()
 })

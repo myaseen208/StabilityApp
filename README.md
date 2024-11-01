@@ -1,9 +1,9 @@
 
-## `StabilityApp`: Stability Analysis App for Genotype by Environment Interaction (GEI) in Multi-Environment Trials
+## `StabilityApp`: Stability Analysis App for GEI in Multi-Environment Trials
 
 ###### Version : [0.1.0](https://myaseen208.com/StabilityApp/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
-##### *Muhammad Yaseen<sup>1,2</sup>, and Kent M. Eskridge<sup>2</sup>*
+##### *Muhammad Yaseen<sup>1,2</sup>, and Kent M. Eskridge<sup>3</sup>*
 
 1.  [School of Mathematical & Statistical Sciences, Clemson University,
     Clemson, South Carolina,
@@ -29,7 +29,7 @@ downloads](https://cranlogs.r-pkg.org/badges/grand-total/StabilityApp?color=gree
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2024--10--26-yellowgreen.svg)](https://github.com/myaseen208/StabilityApp)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2024--11--01-yellowgreen.svg)](https://github.com/myaseen208/StabilityApp)
 \*\*\*
 
 ## Description

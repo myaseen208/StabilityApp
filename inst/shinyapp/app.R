@@ -1,4 +1,5 @@
 source("ui.R")
+
 # Define the server logic
 server <- function(input = input, output = output, session = NULL) {
   # Reactive expression to use user-uploaded data or default ge_data if not uploaded

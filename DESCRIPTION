@@ -1,6 +1,6 @@
 Package: StabilityApp
 Type: Package
-Title: Stability Analysis App for Genotype by Environment Interaction (GEI) in Multi-Environment Trials
+Title: Stability Analysis App for GEI in Multi-Environment Trials
 Version: 0.1.0
 Authors@R: c(
               person(c("Muhammad"), "Yaseen", email = "myaseen208@gmail.com",        role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-5923-1714"))
