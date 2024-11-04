@@ -1,7 +1,7 @@
 
 ## `StabilityApp`: Stability Analysis App for GEI in Multi-Environment Trials
 
-###### Version : [0.1.0](https://myaseen208.com/StabilityApp/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [0.2.0](https://myaseen208.com/StabilityApp/); Copyright (C) 2024: License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
 
 ##### *Muhammad Yaseen<sup>1,2</sup>, and Kent M. Eskridge<sup>3</sup>*
 
@@ -29,7 +29,7 @@ downloads](https://cranlogs.r-pkg.org/badges/grand-total/StabilityApp?color=gree
 [![Project Status:
 WIP](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2024--11--01-yellowgreen.svg)](https://github.com/myaseen208/StabilityApp)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2024--11--04-yellowgreen.svg)](https://github.com/myaseen208/StabilityApp)
 \*\*\*
 
 ## Description
@@ -80,19 +80,18 @@ To cite the methods in the package use:
 
 ``` r
 citation("StabilityApp")
-Warning in citation("StabilityApp"): could not determine year for
-'StabilityApp' from package DESCRIPTION file
-To cite package 'StabilityApp' in publications use:
+Please, support this project by citing it in your publications!
 
-  Yaseen M, Eskridge KM (????). _StabilityApp: Stability Analysis App
+  Yaseen M, Eskridge KM (2024). _StabilityApp: Stability Analysis App
   for Genotype by Environment Interaction (GEI) in Multi-Environment
-  Trials_. R package version 0.1.0.
+  Trials_.
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
     title = {StabilityApp: Stability Analysis App for Genotype by Environment Interaction (GEI) in Multi-Environment Trials},
     author = {Muhammad Yaseen and Kent M. Eskridge},
-    note = {R package version 0.1.0},
+    year = {2024},
+    journal = {The Comprehensive R Archive Network (CRAN)},
   }
 ```

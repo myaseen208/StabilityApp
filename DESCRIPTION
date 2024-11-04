@@ -1,13 +1,17 @@
 Package: StabilityApp
 Type: Package
 Title: Stability Analysis App for GEI in Multi-Environment Trials
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
               person(c("Muhammad"), "Yaseen", email = "myaseen208@gmail.com",        role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-5923-1714"))
             , person(c("Kent",  "M."), "Eskridge",  email = "keskridge1@unl.edu ",   role = c("aut", "ctb"))
             )
 Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
 Description: Provides tools for Genotype by Environment Interaction (GEI) analysis, using statistical models and visualizations to assess genotype performance across environments. It helps researchers explore interaction effects, stability, and adaptability in multi-environment trials, identifying the best-performing genotypes in different conditions. Which Win Where!
+URL: https://myaseen208.com/StabilityApp/
+     https://myaseen208.shinyapps.io/StabilityApp/
+     https://CRAN.R-project.org/package=StabilityApp
+BugReports: https://github.com/myaseen208/StabilityApp/issues
 Depends: R (>= 4.1)
 Imports: 
   dplyr,
@@ -25,5 +29,7 @@ License: GPL-3
 LazyData: TRUE
 RoxygenNote: 7.3.2
 Encoding: UTF-8
-Note: School of Mathematical & Statistical Sciences, Clemson University, Clemson, South Carolina, USA
+Note: 
+    1. School of Mathematical & Statistical Sciences, Clemson University, Clemson, South Carolina, USA
+    2. Department of Mathematics and Statistics, University of Agriculture Faisalabad, Pakistan
 Config/testthat/edition: 3
